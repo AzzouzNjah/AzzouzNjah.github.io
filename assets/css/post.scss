@@ -1,6 +1,3 @@
----
----
-
 /*!
   Post-specific style
   v2.0
@@ -15,7 +12,7 @@ $prompt-newer: "{{ site.data.label.post.button.next }}";
 
 @mixin btn-sharing-color($light-color, $important: false) {
   @if $important {
-    color: var(--btn-share-color, $light-color)!important;
+    color: var(--btn-share-color, $light-color) !important;
   } @else {
     color: var(--btn-share-color, $light-color);
   }
@@ -28,7 +25,7 @@ $prompt-newer: "{{ site.data.label.post.button.next }}";
 }
 
 .post img {
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   margin-bottom: 1.5rem;
   max-width: 100%;
   height: auto;
@@ -76,30 +73,31 @@ $prompt-newer: "{{ site.data.label.post.button.next }}";
   p {
     font-size: 1.1rem;
     line-height: 1.5rem;
-    margin-top: .3rem;
+    margin-top: 0.3rem;
     white-space: normal;
   }
 
-  a, span {
+  a,
+  span {
     &::before {
       color: var(--text-muted-color);
-      font-size: .65rem;
+      font-size: 0.65rem;
       text-transform: uppercase;
     }
     &:first-child {
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
-      left: .5px;
+      left: 0.5px;
       &::before {
-        content: $prompt-older
+        content: $prompt-older;
       }
     }
     &:last-child {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
-      right: .5px;
+      right: 0.5px;
       &::before {
-        content: $prompt-newer
+        content: $prompt-newer;
       }
     }
   }
@@ -124,39 +122,38 @@ $prompt-newer: "{{ site.data.label.post.button.next }}";
   position: sticky;
   top: 4rem;
   transition: top 0.2s ease-in-out;
-  animation: fade-up .8s;
+  animation: fade-up 0.8s;
   &.topbar-down {
     top: 6rem;
   }
-  >h3 {
+  > h3 {
     font-size: 1rem;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
     color: gray;
   }
 }
 
-#toc li>a {
+#toc li > a {
   line-height: 1rem;
-  padding-top: .5rem;
-  padding-bottom: .5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
-
 
 /*--- Related Posts ---*/
 
 #related-posts {
-  >h3 {
+  > h3 {
     color: gray;
     font-size: 1.1rem;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
   }
   .card {
     border: 1px solid var(--card-border-color);
     background-color: var(--card-bg);
     box-shadow: 0 0 5px 0 var(--card-box-shadow);
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     h3 {
       color: var(--label-relate-post);
     }
@@ -172,8 +169,8 @@ $prompt-newer: "{{ site.data.label.post.button.next }}";
   }
 
   p {
-    font-size: .9rem;
-    margin-bottom: .5rem;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -188,7 +185,7 @@ $prompt-newer: "{{ site.data.label.post.button.next }}";
   ul {
     list-style-type: none;
     padding-inline-start: 1.5rem;
-    >li::before {
+    > li::before {
       background: #c2c9d4;
       width: 5px;
       height: 5px;
@@ -211,7 +208,7 @@ $prompt-newer: "{{ site.data.label.post.button.next }}";
 }
 
 %btn-share-hovor {
-  color: var(--btn-share-hover-color)!important;
+  color: var(--btn-share-hover-color) !important;
 }
 
 .share-wrapper {
@@ -221,24 +218,24 @@ $prompt-newer: "{{ site.data.label.post.button.next }}";
     font-size: 1.2rem;
     a {
       &:not(:last-child) {
-        margin-right: .25rem;
+        margin-right: 0.25rem;
       }
       &:hover {
         text-decoration: none;
-        >i {
+        > i {
           @extend %btn-share-hovor;
         }
       }
     }
-    >i {
-      padding-top: .35rem;
+    > i {
+      padding-top: 0.35rem;
       &:hover {
         @extend %btn-share-hovor;
       }
     }
     .fab {
       &.fa-twitter {
-        @include btn-sharing-color(rgba(29, 161, 242, 1.00));
+        @include btn-sharing-color(rgba(29, 161, 242, 1));
       }
       &.fa-facebook-square {
         @include btn-sharing-color(rgb(66, 95, 156));
@@ -250,18 +247,15 @@ $prompt-newer: "{{ site.data.label.post.button.next }}";
         @include btn-sharing-color(rgb(229, 20, 43));
       }
     }
-
   } // .share-icons
 
   .fas.fa-link {
     @include btn-sharing-color(rgb(171, 171, 171));
   }
-
 } // .share-wrapper
 
-
 .share-label {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   &::after {
     content: ":";
   }
@@ -269,23 +263,22 @@ $prompt-newer: "{{ site.data.label.post.button.next }}";
 
 .license-wrapper {
   line-height: 1.2rem;
-  .license-text>a {
+  .license-text > a {
     font-weight: 600;
   }
   i {
     font-weight: 400;
   }
   span:last-child {
-    font-size: .85rem;
+    font-size: 0.85rem;
   }
 } // .license-wrapper
 
-
 @media all and (max-width: 576px) {
   .post-tail-bottom {
-    -ms-flex-wrap: wrap!important;
-    flex-wrap: wrap!important;
-    >div:first-child {
+    -ms-flex-wrap: wrap !important;
+    flex-wrap: wrap !important;
+    > div:first-child {
       margin-bottom: 1rem;
     }
   }
@@ -300,18 +293,18 @@ $prompt-newer: "{{ site.data.label.post.button.next }}";
 @media all and (min-width: 768px) {
   .post {
     .post-meta {
-      >div:not(:first-child)::before {
+      > div:not(:first-child)::before {
         content: "\2022";
         color: rgba(158, 158, 158, 0.8);
         font-weight: bold;
-        padding-left: .5rem;
-        padding-right: .3rem;
+        padding-left: 0.5rem;
+        padding-right: 0.3rem;
       }
       &.flex-column {
-        -webkit-box-orient: horizontal!important;
-        -webkit-box-direction: normal!important;
-        -ms-flex-direction: row!important;
-        flex-direction: row!important;
+        -webkit-box-orient: horizontal !important;
+        -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+        flex-direction: row !important;
       }
     }
   } // .post
@@ -336,10 +329,9 @@ $prompt-newer: "{{ site.data.label.post.button.next }}";
   .post-navigation {
     padding-left: 0;
     padding-right: 0;
-    margin-left: -.5rem;
-    margin-right: -.5rem;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
   }
-
 }
 
 /*

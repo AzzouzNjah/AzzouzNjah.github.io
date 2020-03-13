@@ -1,5 +1,3 @@
----
----
 
 /*!
 * The main styles.
@@ -8,15 +6,13 @@
 * © 2018-2019 Cotes Chung
 * MIT Licensed
 */
-@charset 'UTF-8';
+@import
 
-
-
-@import "_addon/fonts";
-@import "_addon/module";
-@import "_addon/variables";
-@import "_colors/light-typography";
-@import "_colors/dark-typography";
+"_addon/module" ,
+"_addon/fonts" ,
+ "_addon/variables" ,
+ "_colors/light-typography" ,
+ "_colors/dark-typography" ;
 
 @mixin set-visible($light-display, $dark-display) {
   [light-mode-invisible] {

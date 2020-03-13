@@ -1,6 +1,3 @@
----
----
-
 /*!
   Style for Tab Categories
   v2.0
@@ -22,26 +19,25 @@
     border-left: none;
     border-right: none;
     padding-left: 2rem;
-    >i {
+    > i {
       @extend %category-icon-color;
     }
     &:first-child {
       border-top-left-radius: 0;
       border-top-right-radius: 0;
     }
-
   }
 
-  .card-header>span>i:first-child {
+  .card-header > span > i:first-child {
     @extend %category-icon-color;
   }
 
   i {
-    &.far, &.fas {
+    &.far,
+    &.fas {
       font-size: 86%; // fontawesome icons
     }
   }
-
 } // .categories
 
 .category-trigger {
@@ -49,16 +45,17 @@
   height: 1.7rem;
   border-radius: 50%;
   text-align: center;
-  color: #6c757d!important;
-  >i.fas {
+  color: #6c757d !important;
+  > i.fas {
     position: relative;
-    height: .7rem;
+    height: 0.7rem;
     width: 1rem;
     transition: 300ms ease all;
   }
 }
 
-@media (hover: hover) { // only works on desktop
+@media (hover: hover) {
+  // only works on desktop
   .category-trigger:hover {
     background-color: var(--categories-hover-bg);
   }
