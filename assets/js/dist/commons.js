@@ -1,7 +1,4 @@
 ---
-# Aggregation of common JS.
-# © 2018-2019 Cotes Chung
-# MIT License
 ---
 
 {% include_relative _commons/back-to-top.min.js %}

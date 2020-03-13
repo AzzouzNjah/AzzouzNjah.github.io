@@ -1,8 +1,11 @@
 ---
-title: "Customize the Favicon"
-date: 2019-08-11 00:34:00 +0800
-categories: [Blogging, Tutorial]
-tags: [favicon]
+title: Customize the Favicon
+date: 2019-08-10 18:34:00 +02:00
+categories:
+- Blogging
+- Tutorial
+tags:
+- favicon
 toc: false
 ---
 
