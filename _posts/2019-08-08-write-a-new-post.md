@@ -2,10 +2,10 @@
 title: Writing a New Post
 date: 2019-08-08 08:10:00 +02:00
 categories:
-  - Blogging
-  - Tutorial
+- Blogging
+- Tutorial
 tags:
-  - writing
+- writing
 ---
 
 ## Naming and Path
