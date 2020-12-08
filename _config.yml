@@ -69,7 +69,7 @@ social:
   name: Azzouz Njah
   email: njah.abdelaziz@hotmail.com
   links:
-  - https://twitter.com/azzouznjah
+  - https://twitter.com/NjahAzzouz
   - https://github.com/azzouznjah
   - https://www.facebook.com/azzouz.njah
   - https://www.linkedin.com/in/abdelaziz-njah
@@ -147,3 +147,5 @@ sitemap_exclude:
   - sitemap.xml
   - robots.txt
   - redirects.json
+plugins:
+- jemoji
