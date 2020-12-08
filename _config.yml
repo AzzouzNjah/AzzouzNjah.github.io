@@ -127,8 +127,6 @@ compress_html:
   - th
   profile: false
   blanklines: false
-  ignore:
-    envs: []
 exclude:
 - vendor
 - Gemfile.lock
@@ -151,3 +149,4 @@ sitemap_exclude:
   - redirects.json
 plugins:
 - jemoji
+
