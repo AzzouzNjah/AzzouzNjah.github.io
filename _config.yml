@@ -74,15 +74,15 @@ social:
   - https://www.facebook.com/azzouz.njah
   - https://www.linkedin.com/in/abdelaziz-njah
 google_site_verification: google_meta_tag_verification
-baseurl: ''
+baseurl: 
 google_analytics:
-  id: ''
+  id: 
   pv: false
-  proxy_baseurl: ''
-  proxy_url: ''
+  proxy_baseurl: 
+  proxy_url: 
 disqus:
   comments: false
-  shortname: ''
+  shortname: 
 theme_mode: dual
 toc: true
 paginate: 10
@@ -149,4 +149,3 @@ sitemap_exclude:
   - redirects.json
 plugins:
 - jemoji
-
